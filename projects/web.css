@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px whitesmoke;
+}
+
+div::before{
+    content: "";
+    background-image: conic-gradient(
+        yellow 20deg, transparent 120deg
+    );
+    height: 150%;
+    width: 150%;
+    position: absolute;
+    animation: rot 2s linear infinite;
+}
+
+
+div::after{
+    content: "";
+    height: 190px;
+    width: 190px;
+  background-color: green;
+  border-radius: 10px;
+  position: relative;
+
+}
+
+
+@keyframes rot{
+    100%{transform: rotate(360deg);}
+}

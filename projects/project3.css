@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.sec1 {
+    background-image: url("/bg/army4.jpg");
+    min-height: 100%;
+}
+
+.sec2 {
+    background-image: url("/bg/army2.jpg");
+    min-height: 400px;
+}
+
+.sec3 {
+    background-image: url("/bg/army1.jpg");
+    min-height: 400px;
+}
+
+.sec4 {
+    background-image: url("/bg/army3.jpg");
+    min-height: 100%;
+}
+
+.sec1,
+.sec2,
+.sec3,
+.sec4 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+}
+
+.bgt {
+    background-color: rgba(0, 0, 0, 0.726);
+    color: #ccc;
+    letter-spacing: 6px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.info {
+    padding: 50px;
+    background-color: rgb(58, 57, 57);
+    color: #ccc;
+    text-align: center;
+}
+
+.info p {
+    padding: 15px;
+}
